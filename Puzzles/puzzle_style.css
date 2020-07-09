@@ -44,14 +44,14 @@
 }
 
 
-#puzzlecontainersvg, #puzzlecontainersvg2, #puzzlecontainersvg3 {
+#puzzlesvg-cabildo, #puzzlesvg-planetario, #puzzlesvg-csnat {
 	display: block;
 }
 #puzzleimgcomplete {
 	opacity: 0.2;
 }
 .turismopuzzle-title {
-	font-family: Raleway;
+	font-family: "Baloo 2";
 	color: black;	
     text-align: center;
     height: 1px;
@@ -66,7 +66,7 @@
 	visibility: hidden;
 }
 #turismopuzzle-wincabildo p, #turismopuzzle-winplanetario p, #turismopuzzle-wincsnat p {
-	font-family: Raleway;
+	font-family: "Baloo 2";
 	font-size: 32px;
 	color: green;
 	margin-top: 50px;
