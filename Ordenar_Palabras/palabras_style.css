@@ -1,0 +1,232 @@
+/* ********** TITLE ********** */
+.titledrag {
+    width: 100%;
+    height: 26vw;
+    display: flex;
+    background-color: #26C1FC;
+    box-shadow: 1vw 1vw #3DAAD4;
+    margin-bottom: 8vw;
+}
+.titledrag-v {
+    align-items: center;
+}
+.titledrag-h {
+    justify-content: center;
+}
+.letterdrag {
+    font-family: "Baloo 2";
+    color: white;
+    width: 10%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 6vw;
+    margin-bottom: 8vw;
+    margin-right: 1.5vw;
+    background-color: #FF8AD1;
+    box-shadow: 1vw 1vw #CF80A7;
+    transition: 0.5s;
+}
+.letterdrag:hover {
+    transform: scale(1.05);
+    box-shadow: 0.7vw 0.7vw #CF80A7;
+    transition: 0.5s;
+}
+.subtitledrag {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+}
+.subtitledrag h2 {
+    font-family: "Baloo 2";
+    font-weight: bold;
+    color: white;
+    font-size: 3.5vw;
+    margin-top: 0;
+    margin-bottom: 1vw;
+}
+.subtitledrag h3 {
+    font-family: "Baloo 2";
+    color: white;
+    font-size: 2.5vw;
+    margin-top: 0;
+    margin-bottom: 8.5vw;
+}
+
+
+[draggable] {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -khtml-user-drag: element;
+    -webkit-user-drag: element;
+}
+
+.turismodrag-title {
+    text-align: center;
+}
+.turismodrag-title h1 {
+    color: black;
+    font-family: "Baloo 2";
+    font-weight: bold;
+    color: black;
+    height: 1px;
+    visibility: hidden;
+}
+
+.dragseparator {
+    margin-bottom: 3vw;
+}
+
+.dragletter_floralis,
+.dragletter_planetario,
+.dragletter_autodromo {
+    color: #828386;
+    font-family: "Baloo 2", cursive;
+    font-weight: bold;
+    font-size: 7vw;
+    width: 10vw;
+    height: 8vw;
+    background-color: white;
+    border: 0.3vw solid #FF8AD1;
+    border-radius: 0.5vw;
+    margin-right: 0.3vw;
+    text-align: center;
+    cursor: move;
+    line-height: 8vw;
+}
+.dragletter_floralis:hover,
+.dragletter_planetario:hover,
+.dragletter_autodromo:hover {
+    border: 0.3vw solid #CF80A7;
+}
+.dragletter_floralis.over,
+.dragletter_planetario.over,
+.dragletter_autodromo.over {
+    border: 2px dashed #000;
+}
+#turismodrag_floralis,
+#turismodrag_planetario,
+#turismodrag_autodromo {
+    margin-top: 4vw;
+    margin-bottom: 2vw;
+    display: flex;
+}
+
+.drag-align-h {
+    justify-content: center;
+}
+.drag-align-v {
+    align-items: center;
+}
+
+#turismodrag-win_floralis,
+#turismodrag-winplanetario,
+#turismodrag-winautodromo {
+    display: none;
+    text-align: center;
+}
+#turismodrag-win_floralis h3,
+#turismodrag-winplanetario h3,
+#turismodrag-winautodromo h3 {
+    color: black;
+    font-family: "Baloo 2";
+    font-weight: bold;
+    font-size: 3rem;
+    margin-top: 0;
+}
+#turismodrag-win_floralis h4,
+#turismodrag-winplanetario h4,
+#turismodrag-winautodromo h4 {
+    color: black;
+    font-family: "Baloo 2";
+    font-weight: bold;
+    font-size: 2rem;
+}
+#turismodrag-win_floralis p,
+#turismodrag-winplanetario p,
+#turismodrag-winautodromo p {
+    color: black;
+    font-family: "Baloo 2";
+    font-size: 1.5rem;
+}
+#turismodrag-win_floralis button,
+#turismodrag-winplanetario button,
+#turismodrag-winautodromo button {
+    font-family: "Baloo 2";
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: #6CD805;
+    border: none;
+    margin: 0 1vw 1vw 0;
+}
+#turismodrag-win_floralis button:hover,
+#turismodrag-winplanetario button:hover,
+#turismodrag-winautodromo button:hover,
+#turismodrag-win_floralis button:focus,
+#turismodrag-winplanetario button:focus,
+#turismodrag-winautodromo button:focus,
+#turismodrag-win_floralis button:active,
+#turismodrag-winplanetario button:active,
+#turismodrag-winautodromo button:active {
+    background-color: #82AD49 !important;
+    border: none !important;
+    outline: none !important;
+}
+
+#imgfloralis,
+#imgplanetario,
+#imgautodromo {
+    filter: blur(15px);
+    margin-top: 3vw;
+    margin-bottom: 5vw;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+#turismodrag-pista_floralis,
+#turismodrag-pista_planetario,
+#turismodrag-pista_autodromo {
+    display: block;
+    margin: 30px;
+}
+
+.containerpistas {
+    display: flex;
+}
+.containerpistas button {
+    font-family: "Baloo 2";
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: #6CD805;
+    border: none;
+    margin: 0 1vw 1vw 0;
+}
+.containerpistas button:hover, .containerpistas button:focus, .containerpistas button:active {
+    background-color: #82AD49 !important;
+    border: none !important;
+    outline: none !important;
+}
+.containerpistas p {
+    font-family: "Baloo 2";
+    color: black;
+    font-size: 2rem;
+    margin-left: 2vw;
+}
+
+.floralispista_floralis1,
+.floralispista_floralis2,
+.planetariopista_planetario1,
+.planetariopista_planetario2,
+.autodromopista_autodromo1,
+.autodromopista_autodromo2 {
+    display: none;
+}
+.floralisP2,
+.planetarioP2,
+.autodromoP2 {
+    display: none;
+}
