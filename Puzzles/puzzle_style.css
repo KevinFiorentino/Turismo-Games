@@ -1,0 +1,73 @@
+/* ********** TITLE ********** */
+.titlepuzzle {
+    width: 100%;
+    height: 24vw;
+    display: flex;
+    background-color: #26C1FC;
+    box-shadow: 1vw 1vw #3DAAD4;
+}
+.titlepuzzle-v {
+    align-items: center;
+}
+.titlepuzzle-h {
+    justify-content: center;
+}
+.letterpuzzle {
+    font-family: "Baloo 2";
+    color: white;
+    width: 11%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 7vw;
+    margin-bottom: 5vw;
+    margin-right: 1.5vw;
+    background-color: #FFB525;
+    box-shadow: 1vw 1vw #DDA028;
+    transition: 0.5s;
+}
+.letterpuzzle:hover {
+    transform: scale(1.05);
+    box-shadow: 0.7vw 0.7vw #DDA028;
+    transition: 0.5s;
+}
+.subtitlepuzzle {
+    position: absolute;
+    bottom: 10px;
+}
+.subtitlepuzzle h2 {
+    font-family: "Baloo 2";
+    font-weight: bold;
+    color: white;
+    font-size: 3vw;
+    margin-top: 0;
+    margin-bottom: 1vw;
+}
+
+
+#puzzlecontainersvg, #puzzlecontainersvg2, #puzzlecontainersvg3 {
+	display: block;
+}
+#puzzleimgcomplete {
+	opacity: 0.2;
+}
+.turismopuzzle-title {
+	font-family: Raleway;
+	color: black;	
+    text-align: center;
+    height: 1px;
+    visibility: hidden;
+}
+.turismopuzzle-title h1 {
+	font-weight: bold;
+}
+
+#turismopuzzle-wincabildo, #turismopuzzle-winplanetario, #turismopuzzle-wincsnat {
+	text-align: center;
+	visibility: hidden;
+}
+#turismopuzzle-wincabildo p, #turismopuzzle-winplanetario p, #turismopuzzle-wincsnat p {
+	font-family: Raleway;
+	font-size: 32px;
+	color: green;
+	margin-top: 50px;
+}
