@@ -60,16 +60,20 @@ strong {
 	color: black;
 }
 .question {
+	font-family: "Baloo 2";
+	font-weight: bold;
 	color: black;
-	font-size: 18px;
+	font-size: 20px;
 	margin: 5px;
+	line-height: 22px;
 }
 .listAnswers {
 	list-style: none !important;
+	padding: 20px;
 }
 .listAnswers li {
 	font-size: 18px;
-	margin: 10px;
+	margin: 1vw;
 }
 .listAnswers a {
 	font-family: "Baloo 2";
@@ -107,6 +111,7 @@ strong {
 #buttonStart:hover, #buttonStart:focus, #buttonStart:active,
 #buttonNext:hover, #buttonNext:focus, #buttonNext:active, 
 .btn-quizreset:hover, .btn-quizreset:focus, .btn-quizreset:active {	
+	color: white !important;
     background-color: #9480AE !important;
     border: none !important;
     outline: none !important;
@@ -127,7 +132,7 @@ strong {
     border-radius: 10px;
     background-color: #FCFCFC;
 	box-shadow: 1vw 1vw #9480AE;
-	margin-top: 4vw;
+	margin-top: 5vw;
 }
 
 .progress {

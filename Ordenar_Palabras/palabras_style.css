@@ -170,6 +170,7 @@
 #turismodrag-win_floralis button:active,
 #turismodrag-winplanetario button:active,
 #turismodrag-winautodromo button:active {
+    color: white !important;
     background-color: #82AD49 !important;
     border: none !important;
     outline: none !important;
@@ -206,6 +207,7 @@
     margin: 0 1vw 1vw 0;
 }
 .containerpistas button:hover, .containerpistas button:focus, .containerpistas button:active {
+    color: white !important;
     background-color: #82AD49 !important;
     border: none !important;
     outline: none !important;
