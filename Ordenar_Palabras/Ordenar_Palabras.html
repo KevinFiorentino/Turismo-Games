@@ -91,41 +91,38 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <div class="turismodrag-imgplanetario">
-                <img id="imgplanetario" src="./images/Palabras_Floralis.jpg" width="300">
+            <div class="turismodrag-imgecoparque">
+                <img id="imgecoparque" src="./images/Palabras_Ecoparque.jpg" width="300">
             </div>
         </div>
 
         <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-            <div id="turismodrag_planetario">
-                <div class="dragletter_planetario" draggable="true">N</div>
-                <div class="dragletter_planetario" draggable="true">A</div>
-                <div class="dragletter_planetario" draggable="true">O</div>
-                <div class="dragletter_planetario" draggable="true">P</div>
-                <div class="dragletter_planetario" draggable="true">L</div>
-                <div class="dragletter_planetario" draggable="true">R</div>
-                <div class="dragletter_planetario" draggable="true">E</div>
-                <div class="dragletter_planetario" draggable="true">I</div>
-                <div class="dragletter_planetario" draggable="true">T</div>
-                <div class="dragletter_planetario" draggable="true">A</div>
+            <div id="turismodrag_ecoparque">
+                <div class="dragletter_ecoparque" draggable="true">C</div>
+                <div class="dragletter_ecoparque" draggable="true">A</div>
+                <div class="dragletter_ecoparque" draggable="true">O</div>
+                <div class="dragletter_ecoparque" draggable="true">U</div>
+                <div class="dragletter_ecoparque" draggable="true">R</div>
+                <div class="dragletter_ecoparque" draggable="true">Q</div>
+                <div class="dragletter_ecoparque" draggable="true">E</div>
+                <div class="dragletter_ecoparque" draggable="true">E</div>
+                <div class="dragletter_ecoparque" draggable="true">P</div>
             </div>
 
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div id="turismodrag-winplanetario">
+                <div id="turismodrag-winecoparque">
                     <h3>¡FELICIDADES!</h3>
-                    <p>En la explanada del Planetario se exhiben meteoritos que provienen de Campo del Cielo o “Piguem
-                        Nonraltá“, uno de los mayores campos de impacto conocidos en el mundo, situado entre las provincias
-                        de Chaco y Santiago del Estero.</p>
-                    <button class="btn btn-primary" type="button" onclick="reset_planetario()">Jugar otra vez</button>
+                    <p></p>
+                    <button class="btn btn-primary" type="button" onclick="reset_ecoparque()">Jugar otra vez</button>
                 </div>
-                <div id="turismodrag-pista_planetario">
+                <div id="turismodrag-pista_ecoparque">
                     <div class="containerpistas">
-                        <button class="btn btn-primary" type="button" onclick="pista_planetario(1)">Pista 1</button>
-                        <p class="planetariopista_planetario1">En su museo, hay un robot interactivo.</p>
+                        <button class="btn btn-primary" type="button" onclick="pista_ecoparque(1)">Pista 1</button>
+                        <p class="ecoparquepista_ecoparque1"></p>
                     </div>
                     <div class="containerpistas">
-                        <button class="btn btn-primary planetarioP2" type="button" onclick="pista_planetario(2)">Pista 2</button>
-                        <p class="planetariopista_planetario2">Allí podemos conocer todo sobre estrellas, planetas y el universo.</p>
+                        <button class="btn btn-primary ecoparqueP2" type="button" onclick="pista_ecoparque(2)">Pista 2</button>
+                        <p class="ecoparquepista_ecoparque2"></p>
                     </div>
                 </div>
             </div>
@@ -186,7 +183,7 @@
 
 <!-- Eventos drag and drop de cada juego -->
 <script type="text/javascript">
-    var cols1 = document.querySelectorAll("#turismodrag_floralis .dragletter_floralis");[].forEach.call(cols1, function (e) { e.addEventListener("dragstart", handleDragStart, !1), e.addEventListener("dragenter", handleDragEnter, !1), e.addEventListener("dragover", handleDragOver, !1), e.addEventListener("dragleave", handleDragLeave, !1), e.addEventListener("drop", handleDrop, !1), e.addEventListener("dragend", handleDragEnd, !1) }); var cols2 = document.querySelectorAll("#turismodrag_planetario .dragletter_planetario");[].forEach.call(cols2, function (e) { e.addEventListener("dragstart", handleDragStart2, !1), e.addEventListener("dragenter", handleDragEnter2, !1), e.addEventListener("dragover", handleDragOver2, !1), e.addEventListener("dragleave", handleDragLeave2, !1), e.addEventListener("drop", handleDrop2, !1), e.addEventListener("dragend", handleDragEnd2, !1) }); var cols3 = document.querySelectorAll("#turismodrag_autodromo .dragletter_autodromo");[].forEach.call(cols3, function (e) { e.addEventListener("dragstart", handleDragStart3, !1), e.addEventListener("dragenter", handleDragEnter3, !1), e.addEventListener("dragover", handleDragOver3, !1), e.addEventListener("dragleave", handleDragLeave3, !1), e.addEventListener("drop", handleDrop3, !1), e.addEventListener("dragend", handleDragEnd3, !1) }); var dragSrcEl = null; function handleDragStart(e) { if (e.target.className.indexOf("dragletter_floralis") > -1) { (dragSrcEl = e.target).style.opacity = "0.4"; var a = e.dataTransfer; if (a.effectAllowed = "move", a.setData("text", dragSrcEl.innerHTML), a.setDragImage instanceof Function && e.target.innerHTML.indexOf("X") > -1) { var r = new Image; r.src = "dragimage.jpg", a.setDragImage(r, r.width / 2, r.height / 2) } } } var dragSrcEl2 = null; function handleDragStart2(e) { if (e.target.className.indexOf("dragletter_planetario") > -1) { (dragSrcEl2 = e.target).style.opacity = "0.4"; var a = e.dataTransfer; if (a.effectAllowed = "move", a.setData("text", dragSrcEl2.innerHTML), a.setDragImage instanceof Function && e.target.innerHTML.indexOf("X") > -1) { var r = new Image; r.src = "dragimage.jpg", a.setDragImage(r, r.width / 2, r.height / 2) } } } var dragSrcEl3 = null; function handleDragStart3(e) { if (e.target.className.indexOf("dragletter_autodromo") > -1) { (dragSrcEl3 = e.target).style.opacity = "0.4"; var a = e.dataTransfer; if (a.effectAllowed = "move", a.setData("text", dragSrcEl3.innerHTML), a.setDragImage instanceof Function && e.target.innerHTML.indexOf("X") > -1) { var r = new Image; r.src = "dragimage.jpg", a.setDragImage(r, r.width / 2, r.height / 2) } } } function handleDragOver(e) { dragSrcEl && (e.preventDefault(), e.dataTransfer.dropEffect = "move") } function handleDragEnter(e) { dragSrcEl && e.target.classList.add("over") } function handleDragLeave(e) { dragSrcEl && e.target.classList.remove("over") } function handleDragOver2(e) { dragSrcEl2 && (e.preventDefault(), e.dataTransfer.dropEffect = "move") } function handleDragEnter2(e) { dragSrcEl2 && e.target.classList.add("over") } function handleDragLeave2(e) { dragSrcEl2 && e.target.classList.remove("over") } function handleDragOver3(e) { dragSrcEl3 && (e.preventDefault(), e.dataTransfer.dropEffect = "move") } function handleDragEnter3(e) { dragSrcEl3 && e.target.classList.add("over") } function handleDragLeave3(e) { dragSrcEl3 && e.target.classList.remove("over") } function handleDragEnd(e) { dragSrcEl = null, [].forEach.call(cols1, function (e) { e.style.opacity = "", e.classList.remove("over") }) } function handleDragEnd2(e) { dragSrcEl2 = null, [].forEach.call(cols2, function (e) { e.style.opacity = "", e.classList.remove("over") }) } function handleDragEnd3(e) { dragSrcEl3 = null, [].forEach.call(cols3, function (e) { e.style.opacity = "", e.classList.remove("over") }) } function handleDrop(e) { dragSrcEl && (e.stopPropagation(), e.stopImmediatePropagation(), e.preventDefault(), dragSrcEl != this && (dragSrcEl.innerHTML = e.target.innerHTML, this.innerHTML = e.dataTransfer.getData("text"))) } function handleDrop2(e) { dragSrcEl2 && (e.stopPropagation(), e.stopImmediatePropagation(), e.preventDefault(), dragSrcEl2 != this && (dragSrcEl2.innerHTML = e.target.innerHTML, this.innerHTML = e.dataTransfer.getData("text"))) } function handleDrop3(e) { dragSrcEl3 && (e.stopPropagation(), e.stopImmediatePropagation(), e.preventDefault(), dragSrcEl3 != this && (dragSrcEl3.innerHTML = e.target.innerHTML, this.innerHTML = e.dataTransfer.getData("text"))) }
+    var cols1 = document.querySelectorAll("#turismodrag_floralis .dragletter_floralis");[].forEach.call(cols1, function (e) { e.addEventListener("dragstart", handleDragStart, !1), e.addEventListener("dragenter", handleDragEnter, !1), e.addEventListener("dragover", handleDragOver, !1), e.addEventListener("dragleave", handleDragLeave, !1), e.addEventListener("drop", handleDrop, !1), e.addEventListener("dragend", handleDragEnd, !1) }); var cols2 = document.querySelectorAll("#turismodrag_ecoparque .dragletter_ecoparque");[].forEach.call(cols2, function (e) { e.addEventListener("dragstart", handleDragStart2, !1), e.addEventListener("dragenter", handleDragEnter2, !1), e.addEventListener("dragover", handleDragOver2, !1), e.addEventListener("dragleave", handleDragLeave2, !1), e.addEventListener("drop", handleDrop2, !1), e.addEventListener("dragend", handleDragEnd2, !1) }); var cols3 = document.querySelectorAll("#turismodrag_autodromo .dragletter_autodromo");[].forEach.call(cols3, function (e) { e.addEventListener("dragstart", handleDragStart3, !1), e.addEventListener("dragenter", handleDragEnter3, !1), e.addEventListener("dragover", handleDragOver3, !1), e.addEventListener("dragleave", handleDragLeave3, !1), e.addEventListener("drop", handleDrop3, !1), e.addEventListener("dragend", handleDragEnd3, !1) }); var dragSrcEl = null; function handleDragStart(e) { if (e.target.className.indexOf("dragletter_floralis") > -1) { (dragSrcEl = e.target).style.opacity = "0.4"; var a = e.dataTransfer; if (a.effectAllowed = "move", a.setData("text", dragSrcEl.innerHTML), a.setDragImage instanceof Function && e.target.innerHTML.indexOf("X") > -1) { var r = new Image; r.src = "dragimage.jpg", a.setDragImage(r, r.width / 2, r.height / 2) } } } var dragSrcEl2 = null; function handleDragStart2(e) { if (e.target.className.indexOf("dragletter_ecoparque") > -1) { (dragSrcEl2 = e.target).style.opacity = "0.4"; var a = e.dataTransfer; if (a.effectAllowed = "move", a.setData("text", dragSrcEl2.innerHTML), a.setDragImage instanceof Function && e.target.innerHTML.indexOf("X") > -1) { var r = new Image; r.src = "dragimage.jpg", a.setDragImage(r, r.width / 2, r.height / 2) } } } var dragSrcEl3 = null; function handleDragStart3(e) { if (e.target.className.indexOf("dragletter_autodromo") > -1) { (dragSrcEl3 = e.target).style.opacity = "0.4"; var a = e.dataTransfer; if (a.effectAllowed = "move", a.setData("text", dragSrcEl3.innerHTML), a.setDragImage instanceof Function && e.target.innerHTML.indexOf("X") > -1) { var r = new Image; r.src = "dragimage.jpg", a.setDragImage(r, r.width / 2, r.height / 2) } } } function handleDragOver(e) { dragSrcEl && (e.preventDefault(), e.dataTransfer.dropEffect = "move") } function handleDragEnter(e) { dragSrcEl && e.target.classList.add("over") } function handleDragLeave(e) { dragSrcEl && e.target.classList.remove("over") } function handleDragOver2(e) { dragSrcEl2 && (e.preventDefault(), e.dataTransfer.dropEffect = "move") } function handleDragEnter2(e) { dragSrcEl2 && e.target.classList.add("over") } function handleDragLeave2(e) { dragSrcEl2 && e.target.classList.remove("over") } function handleDragOver3(e) { dragSrcEl3 && (e.preventDefault(), e.dataTransfer.dropEffect = "move") } function handleDragEnter3(e) { dragSrcEl3 && e.target.classList.add("over") } function handleDragLeave3(e) { dragSrcEl3 && e.target.classList.remove("over") } function handleDragEnd(e) { dragSrcEl = null, [].forEach.call(cols1, function (e) { e.style.opacity = "", e.classList.remove("over") }) } function handleDragEnd2(e) { dragSrcEl2 = null, [].forEach.call(cols2, function (e) { e.style.opacity = "", e.classList.remove("over") }) } function handleDragEnd3(e) { dragSrcEl3 = null, [].forEach.call(cols3, function (e) { e.style.opacity = "", e.classList.remove("over") }) } function handleDrop(e) { dragSrcEl && (e.stopPropagation(), e.stopImmediatePropagation(), e.preventDefault(), dragSrcEl != this && (dragSrcEl.innerHTML = e.target.innerHTML, this.innerHTML = e.dataTransfer.getData("text"))) } function handleDrop2(e) { dragSrcEl2 && (e.stopPropagation(), e.stopImmediatePropagation(), e.preventDefault(), dragSrcEl2 != this && (dragSrcEl2.innerHTML = e.target.innerHTML, this.innerHTML = e.dataTransfer.getData("text"))) } function handleDrop3(e) { dragSrcEl3 && (e.stopPropagation(), e.stopImmediatePropagation(), e.preventDefault(), dragSrcEl3 != this && (dragSrcEl3.innerHTML = e.target.innerHTML, this.innerHTML = e.dataTransfer.getData("text"))) }
 </script>
 
 <script type="text/javascript" src="./palabras_script.js"></script>

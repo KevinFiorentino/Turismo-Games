@@ -75,11 +75,13 @@
 }
 
 .dragseparator {
-    margin-bottom: 3vw;
+    margin: 2vw auto;
+    border-bottom: 2px solid #BFBFBF;
+    width: 80%;
 }
 
 .dragletter_floralis,
-.dragletter_planetario,
+.dragletter_ecoparque,
 .dragletter_autodromo {
     color: #828386;
     font-family: "Baloo 2", cursive;
@@ -96,17 +98,17 @@
     line-height: 8vw;
 }
 .dragletter_floralis:hover,
-.dragletter_planetario:hover,
+.dragletter_ecoparque:hover,
 .dragletter_autodromo:hover {
     border: 0.3vw solid #CF80A7;
 }
 .dragletter_floralis.over,
-.dragletter_planetario.over,
+.dragletter_ecoparque.over,
 .dragletter_autodromo.over {
     border: 2px dashed #000;
 }
 #turismodrag_floralis,
-#turismodrag_planetario,
+#turismodrag_ecoparque,
 #turismodrag_autodromo {
     margin-top: 4vw;
     margin-bottom: 2vw;
@@ -121,13 +123,13 @@
 }
 
 #turismodrag-win_floralis,
-#turismodrag-winplanetario,
+#turismodrag-winecoparque,
 #turismodrag-winautodromo {
     display: none;
     text-align: center;
 }
 #turismodrag-win_floralis h3,
-#turismodrag-winplanetario h3,
+#turismodrag-winecoparque h3,
 #turismodrag-winautodromo h3 {
     color: black;
     font-family: "Baloo 2";
@@ -136,7 +138,7 @@
     margin-top: 0;
 }
 #turismodrag-win_floralis h4,
-#turismodrag-winplanetario h4,
+#turismodrag-winecoparque h4,
 #turismodrag-winautodromo h4 {
     color: black;
     font-family: "Baloo 2";
@@ -144,14 +146,14 @@
     font-size: 2rem;
 }
 #turismodrag-win_floralis p,
-#turismodrag-winplanetario p,
+#turismodrag-winecoparque p,
 #turismodrag-winautodromo p {
     color: black;
     font-family: "Baloo 2";
     font-size: 1.5rem;
 }
 #turismodrag-win_floralis button,
-#turismodrag-winplanetario button,
+#turismodrag-winecoparque button,
 #turismodrag-winautodromo button {
     font-family: "Baloo 2";
     color: white;
@@ -162,13 +164,13 @@
     margin: 0 1vw 1vw 0;
 }
 #turismodrag-win_floralis button:hover,
-#turismodrag-winplanetario button:hover,
+#turismodrag-winecoparque button:hover,
 #turismodrag-winautodromo button:hover,
 #turismodrag-win_floralis button:focus,
-#turismodrag-winplanetario button:focus,
+#turismodrag-winecoparque button:focus,
 #turismodrag-winautodromo button:focus,
 #turismodrag-win_floralis button:active,
-#turismodrag-winplanetario button:active,
+#turismodrag-winecoparque button:active,
 #turismodrag-winautodromo button:active {
     color: white !important;
     background-color: #82AD49 !important;
@@ -177,7 +179,7 @@
 }
 
 #imgfloralis,
-#imgplanetario,
+#imgecoparque,
 #imgautodromo {
     filter: blur(15px);
     margin-top: 3vw;
@@ -188,7 +190,7 @@
 }
 
 #turismodrag-pista_floralis,
-#turismodrag-pista_planetario,
+#turismodrag-pista_ecoparque,
 #turismodrag-pista_autodromo {
     display: block;
     margin: 30px;
@@ -221,14 +223,14 @@
 
 .floralispista_floralis1,
 .floralispista_floralis2,
-.planetariopista_planetario1,
-.planetariopista_planetario2,
+.ecoparquepista_ecoparque1,
+.ecoparquepista_ecoparque2,
 .autodromopista_autodromo1,
 .autodromopista_autodromo2 {
     display: none;
 }
 .floralisP2,
-.planetarioP2,
+.ecoparqueP2,
 .autodromoP2 {
     display: none;
 }

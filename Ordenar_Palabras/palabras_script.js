@@ -105,75 +105,70 @@ function reset_floralis() {
 
 
 
-/* PLANETARIO */
+/* ECOPARQUE */
 document.addEventListener("dragend", function (event) {
-    var letras = document.querySelectorAll("#turismodrag_planetario .dragletter_planetario");
+    var letras = document.querySelectorAll("#turismodrag_ecoparque .dragletter_ecoparque");
     var word = "";
 
     letras.forEach(function (e) {
         word += e.innerHTML;
     });
 
-    if (word == "PLANETARIO") {
-        document.getElementById("imgplanetario").style.filter = "blur(0px)";
-        document.getElementById("turismodrag-pista_planetario").style.display = "none";
-        document.getElementById("turismodrag-winplanetario").style.display = "block";
-        print_planetario(10);
+    if (word == "ECOPARQUE") {
+        document.getElementById("imgecoparque").style.filter = "blur(0px)";
+        document.getElementById("turismodrag-pista_ecoparque").style.display = "none";
+        document.getElementById("turismodrag-winecoparque").style.display = "block";
+        print_ecoparque(9);
     }
-    else if (word.indexOf("PLANETARI") == 0) {
-        document.getElementById("imgplanetario").style.filter = "blur(2px)";
-        document.getElementById("turismodrag-winplanetario").style.display = "none";
-        print_planetario(9);
+    else if (word.indexOf("ECOPARQU") == 0) {
+        document.getElementById("imgecoparque").style.filter = "blur(2px)";
+        document.getElementById("turismodrag-winecoparque").style.display = "none";
+        print_ecoparque(8);
     }
-    else if (word.indexOf("PLANETAR") == 0) {
-        document.getElementById("imgplanetario").style.filter = "blur(4px)";
-        document.getElementById("turismodrag-winplanetario").style.display = "none";
-        print_planetario(8);
+    else if (word.indexOf("ECOPARQ") == 0) {
+        document.getElementById("imgecoparque").style.filter = "blur(4px)";
+        document.getElementById("turismodrag-winecoparque").style.display = "none";
+        print_ecoparque(7);
     }
-    else if (word.indexOf("PLANETA") == 0) {
-        document.getElementById("imgplanetario").style.filter = "blur(6px)";
-        document.getElementById("turismodrag-winplanetario").style.display = "none";
-        print_planetario(7);
+    else if (word.indexOf("ECOPAR") == 0) {
+        document.getElementById("imgecoparque").style.filter = "blur(6px)";
+        document.getElementById("turismodrag-winecoparque").style.display = "none";
+        print_ecoparque(6);
     }
-    else if (word.indexOf("PLANET") == 0) {
-        document.getElementById("imgplanetario").style.filter = "blur(8px)";
-        document.getElementById("turismodrag-winplanetario").style.display = "none";
-        print_planetario(6);
+    else if (word.indexOf("ECOPA") == 0) {
+        document.getElementById("imgecoparque").style.filter = "blur(8px)";
+        document.getElementById("turismodrag-winecoparque").style.display = "none";
+        print_ecoparque(5);
     }
-    else if (word.indexOf("PLANE") == 0) {
-        document.getElementById("imgplanetario").style.filter = "blur(10px)";
-        document.getElementById("turismodrag-winplanetario").style.display = "none";
-        print_planetario(5);
+    else if (word.indexOf("ECOP") == 0) {
+        document.getElementById("imgecoparque").style.filter = "blur(10px)";
+        document.getElementById("turismodrag-winecoparque").style.display = "none";
+        print_ecoparque(4);
     }
-    else if (word.indexOf("PLAN") == 0) {
-        document.getElementById("imgplanetario").style.filter = "blur(11px)";
-        document.getElementById("turismodrag-winplanetario").style.display = "none";
-        print_planetario(4);
+    else if (word.indexOf("ECO") == 0) {
+        document.getElementById("imgecoparque").style.filter = "blur(11px)";
+        document.getElementById("turismodrag-winecoparque").style.display = "none";
+        print_ecoparque(3);
     }
-    else if (word.indexOf("PLA") == 0) {
-        document.getElementById("imgplanetario").style.filter = "blur(12px)";
-        document.getElementById("turismodrag-winplanetario").style.display = "none";
-        print_planetario(3);
+    else if (word.indexOf("EC") == 0) {
+        document.getElementById("imgecoparque").style.filter = "blur(12px)";
+        document.getElementById("turismodrag-winecoparque").style.display = "none";
+        print_ecoparque(2);
     }
-    else if (word.indexOf("PL") == 0) {
-        document.getElementById("imgplanetario").style.filter = "blur(13px)";
-        document.getElementById("turismodrag-winplanetario").style.display = "none";
-        print_planetario(2);
-    }
-    else if (word.indexOf("P") == 0) {
-        document.getElementById("imgplanetario").style.filter = "blur(14px)";
-        document.getElementById("turismodrag-winplanetario").style.display = "none";
-        print_planetario(1);
+    else if (word.indexOf("E") == 0) {
+        document.getElementById("imgecoparque").style.filter = "blur(13px)";
+        document.getElementById("turismodrag-winecoparque").style.display = "none";
+        print_ecoparque(1);
     }
     else {
-        document.getElementById("imgplanetario").style.filter = "blur(15px)";
-        document.getElementById("turismodrag-winplanetario").style.display = "none";
-        print_planetario(0);
+        document.getElementById("imgecoparque").style.filter = "blur(15px)";
+        document.getElementById("turismodrag-winecoparque").style.display = "none";
+        print_ecoparque(0);
     }
 }, false);
 
-function print_planetario(cant) {
-    var boxes = document.querySelectorAll("#turismodrag_planetario .dragletter_planetario");
+function print_ecoparque(cant) {
+    var boxes = document.querySelectorAll("#turismodrag_ecoparque .dragletter_ecoparque");
     for (var i = 0; i < boxes.length; i++) {
         boxes[i].setAttribute('style', 'color: #828386');
     }
@@ -182,36 +177,35 @@ function print_planetario(cant) {
         boxes[i].style.background = "#FF8AD1";
     }
 }
-function pista_planetario(number) {
+function pista_ecoparque(number) {
     if (number == 1) {
-        document.getElementsByClassName("planetarioP2")[0].style.display = "block";
-        document.getElementsByClassName("planetariopista_planetario1")[0].style.display = "block";
+        document.getElementsByClassName("ecoparqueP2")[0].style.display = "block";
+        document.getElementsByClassName("ecoparquepista_ecoparque1")[0].style.display = "block";
     }
     else {
-        document.getElementsByClassName("planetariopista_planetario2")[0].style.display = "block";
+        document.getElementsByClassName("ecoparquepista_ecoparque2")[0].style.display = "block";
     }
 }
-function reset_planetario() {
-    document.getElementById("imgplanetario").style.filter = "blur(15px)";
-    document.getElementById("turismodrag-pista_planetario").style.display = "block";
-    document.getElementById("turismodrag-winplanetario").style.display = "none";
-    document.getElementsByClassName("planetarioP2")[0].style.display = "none";
-    document.getElementsByClassName("planetariopista_planetario1")[0].style.display = "none";
-    document.getElementsByClassName("planetariopista_planetario2")[0].style.display = "none";
-    document.getElementById("turismodrag_planetario").innerHTML = `
-        <div class="dragletter_planetario" draggable="true">N</div>
-        <div class="dragletter_planetario" draggable="true">A</div>
-        <div class="dragletter_planetario" draggable="true">P</div>
-        <div class="dragletter_planetario" draggable="true">O</div>
-        <div class="dragletter_planetario" draggable="true">L</div>
-        <div class="dragletter_planetario" draggable="true">R</div>
-        <div class="dragletter_planetario" draggable="true">E</div>
-        <div class="dragletter_planetario" draggable="true">I</div>
-        <div class="dragletter_planetario" draggable="true">T</div>
-        <div class="dragletter_planetario" draggable="true">A</div>
+function reset_ecoparque() {
+    document.getElementById("imgecoparque").style.filter = "blur(15px)";
+    document.getElementById("turismodrag-pista_ecoparque").style.display = "block";
+    document.getElementById("turismodrag-winecoparque").style.display = "none";
+    document.getElementsByClassName("ecoparqueP2")[0].style.display = "none";
+    document.getElementsByClassName("ecoparquepista_ecoparque1")[0].style.display = "none";
+    document.getElementsByClassName("ecoparquepista_ecoparque2")[0].style.display = "none";
+    document.getElementById("turismodrag_ecoparque").innerHTML = `
+        <div class="dragletter_ecoparque" draggable="true">C</div>
+        <div class="dragletter_ecoparque" draggable="true">A</div>
+        <div class="dragletter_ecoparque" draggable="true">O</div>
+        <div class="dragletter_ecoparque" draggable="true">U</div>
+        <div class="dragletter_ecoparque" draggable="true">R</div>
+        <div class="dragletter_ecoparque" draggable="true">Q</div>
+        <div class="dragletter_ecoparque" draggable="true">E</div>
+        <div class="dragletter_ecoparque" draggable="true">E</div>
+        <div class="dragletter_ecoparque" draggable="true">P</div>
     `;
     dragSrcEl2 = null;
-    cols2 = document.querySelectorAll("#turismodrag_planetario .dragletter_planetario");
+    cols2 = document.querySelectorAll("#turismodrag_ecoparque .dragletter_ecoparque");
     [].forEach.call(cols2, function (e) {
         e.addEventListener("dragstart", handleDragStart2, !1),
             e.addEventListener("dragenter", handleDragEnter2, !1),
