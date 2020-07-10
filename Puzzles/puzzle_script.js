@@ -59,7 +59,7 @@ function testing_cabildo() {
             n = parseFloat(t[r].firstChild.getAttribute("y"));
         (ide = t[r].getAttribute("id")), origX[ide] == i && origY[ide] == n && (e += 1);
     }
-    9 == e && (document.getElementById("turismopuzzle-wincabildo").style.visibility = "visible");
+    9 == e && (document.getElementsByClassName("cabildo-end")[0].style.display = "block");
 }
 
 /* ********** PLANETARIO  ********** */
@@ -123,7 +123,7 @@ function testing_planetario() {
             n = parseFloat(t[r].firstChild.getAttribute("y"));
         (ide = t[r].getAttribute("id") - 9), origX2[ide] == i && origY2[ide] == n && (e += 1);
     }
-    9 == e && (document.getElementById("turismopuzzle-winplanetario").style.visibility = "visible");
+    9 == e && (document.getElementsByClassName("planetario-end")[0].style.display = "block");
 }
 
 /* ********** MUSEO CIENCIAS NATURALEZ  ********** */
@@ -187,5 +187,5 @@ function testing_csnat() {
             n = parseFloat(t[r].firstChild.getAttribute("y"));
         (ide = t[r].getAttribute("id") - 18), origX3[ide] == i && origY3[ide] == n && (e += 1);
     }
-    9 == e && (document.getElementById("turismopuzzle-wincsnat").style.visibility = "visible");
+    9 == e && (document.getElementsByClassName("csnat-end")[0].style.display = "block");
 }

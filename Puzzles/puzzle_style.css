@@ -61,13 +61,47 @@
 	font-weight: bold;
 }
 
+.dragseparator {
+    margin: 2vw auto;
+    border-bottom: 2px solid #BFBFBF;
+    width: 80%;
+}
+.turismopuzzle-cabildo, .turismopuzzle-planetario, .turismopuzzle-csnat {
+    outline: 2px solid #FFB525;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    box-shadow: 1vw 1vw #DDA028;
+    background-color: #FCFCFC;
+}
+
+.cabildo-end, .planetario-end, .csnat-end {
+    display: none;
+}
 #turismopuzzle-wincabildo, #turismopuzzle-winplanetario, #turismopuzzle-wincsnat {
 	text-align: center;
-	visibility: hidden;
 }
-#turismopuzzle-wincabildo p, #turismopuzzle-winplanetario p, #turismopuzzle-wincsnat p {
-	font-family: "Baloo 2";
-	font-size: 32px;
-	color: green;
+#turismopuzzle-wincabildo h2, #turismopuzzle-winplanetario h2, #turismopuzzle-wincsnat h2 {
+    font-family: "Baloo 2";
+    font-weight: bold;
+	font-size: 5rem;
+	color: black;
 	margin-top: 50px;
+}
+#turismopuzzle-wincabildo h3, #turismopuzzle-winplanetario h3, #turismopuzzle-wincsnat h3 {
+    font-family: "Baloo 2";
+    font-weight: bold;
+	font-size: 5rem;
+	color: #FFB525;
+}
+#turismopuzzle-wincabildo h4, #turismopuzzle-winplanetario h4, #turismopuzzle-wincsnat h4 {
+    font-family: "Baloo 2";
+    font-weight: bold;
+	font-size: 3rem;
+	color: black;
+}
+
+#turismopuzzle-wincabildo p, #turismopuzzle-winplanetario p, #turismopuzzle-wincsnat p {
+    color: black;
+    font-family: "Baloo 2";
+    font-size: 1.5rem;
 }
