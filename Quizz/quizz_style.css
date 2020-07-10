@@ -15,15 +15,17 @@
 .letterquizz {
 	font-family: "Baloo 2";
 	color: white;
-	width: 12%;
-	text-align: center;
-	font-weight: bold;
-	font-size: 7vw;
-	margin-bottom: 6vw;
-	margin-right: 2vw;
-	background-color: #BF8FFD;
-	box-shadow: 1vw 1vw #9480AE;
-	transition: 0.5s;
+	width: 9%;
+    height: 9VW;
+    text-align: center;
+    font-weight: bold;
+    font-size: 7vw;
+    margin-bottom: 6vw;
+    margin-right: 1.2vw;
+    background-color: #BF8FFD;
+    box-shadow: 0.9vw 0.9vw #9480AE;
+    transition: 0.5s;
+
 }
 .letterquizz:hover {
 	transform: scale(1.05);
