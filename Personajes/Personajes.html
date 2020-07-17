@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Personajes</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./personajes_style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="turismopersonajes-title">
+                <h1>Buenos Aires en Familia</h1>
+            </div>
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="titlepersonajes titlepersonajes-v titlepersonajes-h">
+                <div class="letterpersonajes">P</div>
+                <div class="letterpersonajes">E</div>
+                <div class="letterpersonajes">R</div>
+                <div class="letterpersonajes">S</div>
+                <div class="letterpersonajes">O</div>
+                <div class="letterpersonajes">N</div>
+                <div class="letterpersonajes">A</div>
+                <div class="letterpersonajes">J</div>
+                <div class="letterpersonajes">E</div>
+                <div class="letterpersonajes">S</div>
+                <div class="subtitlepersonajes">
+                    <h2>¡Ubicá al personaje!</h2>
+                    <h3>Pausá el video para encajar al personaje en su lugar.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</br></br></br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <video id="video_mafalda" width="100%" loop pause muted>
+                <source src="./videos/Mafalda.mp4" type="video/mp4">Lo sentimos, su navegador no soporta reproducción de videos.
+            </video>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="personajesButtons">
+                <button id="startMafalda" class="btn btn-primary" type="button">Comenzar</button>
+                <button id="stopMafalda" class="btn btn-primary" type="button">Pausar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <video id="video_larguirucho" width="100%" loop pause muted>
+                <source src="./videos/Larguirucho.mp4" type="video/mp4">Lo sentimos, su navegador no soporta reproducción de videos.
+            </video>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="personajesButtons">
+                <button id="startLarguirucho" class="btn btn-primary" type="button">Comenzar</button>
+                <button id="stopLarguirucho" class="btn btn-primary" type="button">Pausar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <video id="video_donfulgencio" width="100%" loop pause muted>
+                <source src="./videos/Don_Fulgencio.mp4" type="video/mp4">Lo sentimos, su navegador no soporta reproducción de videos.
+            </video>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="personajesButtons">
+                <button id="startDonFulgencio" class="btn btn-primary" type="button">Comenzar</button>
+                <button id="stopDonFulgencio" class="btn btn-primary" type="button">Pausar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+/* MAFALDA */
+document.getElementById("startMafalda").addEventListener("click", function(event) {
+    var video_mafalda = document.getElementById("video_mafalda");
+    video_mafalda.play();
+
+    document.getElementById("startMafalda").style.display = "none";
+    document.getElementById("stopMafalda").style.display = "block";
+
+});
+document.getElementById("stopMafalda").addEventListener("click", function(event) {
+    var video_mafalda = document.getElementById("video_mafalda");
+    video_mafalda.pause();
+
+    document.getElementById("startMafalda").style.display = "block";
+    document.getElementById("stopMafalda").style.display = "none";
+});
+
+/* DON FULGENCIO */
+document.getElementById("startDonFulgencio").addEventListener("click", function(event) {
+    var video_donfulgencio = document.getElementById("video_donfulgencio");
+    video_donfulgencio.play();
+
+    document.getElementById("startDonFulgencio").style.display = "none";
+    document.getElementById("stopDonFulgencio").style.display = "block";
+
+});
+document.getElementById("stopDonFulgencio").addEventListener("click", function(event) {
+    var video_donfulgencio = document.getElementById("video_donfulgencio");
+    video_donfulgencio.pause();
+
+    document.getElementById("startDonFulgencio").style.display = "block";
+    document.getElementById("stopDonFulgencio").style.display = "none";
+});
+
+/* LARGUIRUCHO */
+document.getElementById("startLarguirucho").addEventListener("click", function(event) {
+    var video_larguirucho = document.getElementById("video_larguirucho");
+    video_larguirucho.play();
+
+    document.getElementById("startLarguirucho").style.display = "none";
+    document.getElementById("stopLarguirucho").style.display = "block";
+
+});
+document.getElementById("stopLarguirucho").addEventListener("click", function(event) {
+    var video_larguirucho = document.getElementById("video_larguirucho");
+    video_larguirucho.pause();
+
+    document.getElementById("startLarguirucho").style.display = "block";
+    document.getElementById("stopLarguirucho").style.display = "none";
+});
+
+</script>
+
+</body>
+
+</html>
