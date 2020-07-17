@@ -105,7 +105,7 @@
 .dragletter_floralis.over,
 .dragletter_ecoparque.over,
 .dragletter_autodromo.over {
-    border: 2px dashed #000;
+    outline: 2px dashed #000;
 }
 #turismodrag_floralis,
 #turismodrag_ecoparque,
@@ -193,7 +193,7 @@
 #turismodrag-pista_ecoparque,
 #turismodrag-pista_autodromo {
     display: block;
-    margin: 30px;
+    margin: 30px 10px 30px 10px;
 }
 
 .containerpistas {

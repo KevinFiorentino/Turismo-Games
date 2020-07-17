@@ -19,7 +19,6 @@ const myQuestions = [
 		correctAnswer: "Choripán",
 		description: "En Argentina se consume un promedio de 600 millones de choripanes por año (un promedio de 15 por persona)."
 	},
-	/*
 	{
 		question: "¿En qué edificio de la Ciudad podrías conocer al Presidente?",
 		answers: {
@@ -100,7 +99,6 @@ const myQuestions = [
 		correctAnswer: "Benito Quinquela Martín",
 		description: "Benito Quinquela Martín fue un pintor argentino que estaba enamorado del barrio de La Boca. Pintaba sobre el barrio y el puerto, un paisaje que no se parece a ningún otro de la Ciudad. Fue gracias a él y otros vecinos vecinos que se creó la famosa calle museo Caminito."
 	},
-	*/
 ];
 
 var indexPreg = 0;
@@ -145,7 +143,8 @@ function turismoQuiz() {
 		}
 		document.getElementById("turismo-quiz").innerHTML = `
 			<div class="quizend">
-				<p>Cantidad respuestas correctas ${correctas}/${myQuestions.length}</p>
+				<p>Cantidad respuestas correctas: ${correctas}/${myQuestions.length}</p>
+				<h1>¡Felicitaciones!</h1>
 				<p>${mensaje}</p>
 				<p>
 					Seguí aprendiendo sobre la 
