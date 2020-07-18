@@ -59,6 +59,12 @@
     visibility: hidden;
 }
 
+.dragseparator {
+    margin: 3vw auto;
+    border-bottom: 1px solid #BFBFBF;
+    width: 80%;
+}
+
 .personajesButtons {
     display: flex;
     justify-content: center;
@@ -89,4 +95,22 @@
     background-color: #82AD49 !important;
     border: none !important;
     outline: none !important;
+}
+
+.infoMafalda, .infoDonFulgencio, .infoLarguirucho {
+    margin-top: 3vw;
+    text-align: center;
+}
+.infoMafalda h2, .infoDonFulgencio h2, .infoLarguirucho h2 {
+    font-family: "Baloo 2";
+    font-weight: bold;
+    color: black;
+    font-size: 36px;
+}
+.infoMafalda p, .infoDonFulgencio p, .infoLarguirucho p {
+    font-family: "Baloo 2";
+    color: black;
+    font-size: 16px;
+    margin-left: 3vw;
+    margin-right: 3vw;
 }
