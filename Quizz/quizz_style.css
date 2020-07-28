@@ -1,7 +1,7 @@
 /* ********** TITLE ********** */
 .titlequizz {
 	width: 100%;
-	height: 25vw;
+	height: 28vw;
 	display: flex;
 	background-color: #26C1FC;
 	box-shadow: 1vw 1vw #3DAAD4;
@@ -15,17 +15,16 @@
 .letterquizz {
 	font-family: "Baloo 2";
 	color: white;
-	width: 9%;
+	width: 7.5%;
     height: 9VW;
     text-align: center;
     font-weight: bold;
     font-size: 7vw;
-    margin-bottom: 6vw;
+    margin-bottom: 7vw;
     margin-right: 1.2vw;
     background-color: #BF8FFD;
     box-shadow: 0.9vw 0.9vw #9480AE;
     transition: 0.5s;
-
 }
 .letterquizz:hover {
 	transform: scale(1.05);
@@ -34,7 +33,8 @@
 }
 .subtitlequizz {
 	position: absolute;
-    bottom: 10px;
+	bottom: 10px;
+	text-align: center;
 }
 .subtitlequizz h2 {
 	font-family: "Baloo 2";
@@ -44,7 +44,13 @@
 	margin-top: 0;
 	margin-bottom: 1vw;
 }
-
+.subtitlequizz h3 {
+    font-family: "Baloo 2";
+    color: white;
+    font-size: 3vw;
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
 
 .titlelanding {
@@ -101,7 +107,7 @@ strong {
 .button-align-v {
     align-items: center;
 }
-#buttonStart, .btn-quizreset, #buttonNext {
+#buttonStart,  #buttonNext, #buttonStart_img,  #buttonNext_img, .btn-quizreset {
 	font-family: "Baloo 2";
 	color: white;
     font-weight: bold;
@@ -112,7 +118,10 @@ strong {
 }
 #buttonStart:hover, #buttonStart:focus, #buttonStart:active,
 #buttonNext:hover, #buttonNext:focus, #buttonNext:active, 
-.btn-quizreset:hover, .btn-quizreset:focus, .btn-quizreset:active {	
+.btn-quizreset:hover, .btn-quizreset:focus, .btn-quizreset:active,
+#buttonStart_img:hover, #buttonStart_img:focus, #buttonStart_img:active,
+#buttonNext_img:hover, #buttonNext_img:focus, #buttonNext_img:active, 
+.btn-quizreset_img:hover, .btn-quizreset_img:focus, .btn-quizreset_img:active {
 	color: white !important;
     background-color: #9480AE !important;
     border: none !important;
@@ -121,14 +130,14 @@ strong {
 .btn-quizreset {
     margin-top: 2vw;;
 }
-#buttonNext {
+#buttonNext, #buttonNext_img {
 	visibility: hidden;
 }
 .containerquiz {
 	margin: 3vw;
 	background-color: #FCFCFC;
 }
-#turismo-quiz {
+#turismo-quiz, #turismo-quiz_img {
 	display: none;
     border: 3px solid #BF8FFD;
     border-radius: 10px;
@@ -153,6 +162,7 @@ strong {
 }
 .quizend {
 	margin: 3vw;
+	text-align: center;
 }
 .quizend h1 {
 	font-family: "Baloo 2";
@@ -170,4 +180,44 @@ strong {
 	margin-top: 15px;
 	font-size: 18px;
 	text-align: center;
+}
+
+/* QUIZZ IMAGENES */
+.listAnswers_img {
+	display: flex;
+	justify-content: center;
+}
+.listAnswers_img img{
+	cursor: pointer;
+	border-radius: 10px;
+	border: 5px solid #BF8FFD;
+}
+.question-img {
+	border-radius: 10px;
+	border: 5px solid #BF8FFD;
+}
+@media (max-width: 512px) {
+	.listAnswers_img img {
+		border: 3px solid #BF8FFD;
+	}
+}
+.question img {
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+a.url-back{
+	font-family: "Baloo 2";
+	font-weight:bold;
+	padding:1vw 2vw;
+	background-color:#6CD805;
+	font-size:3rem;
+	color:#ffffff!important;
+	border-radius:10px;
+	text-decoration:none!important;
+}
+a.url-back:hover{
+	box-shadow: 0.3vw 0.3vw rgba(0, 0, 0, 0.2);
 }
