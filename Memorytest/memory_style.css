@@ -1,0 +1,164 @@
+.titlememory {
+    width: 100%;
+    height: 27vw;
+    display: flex;
+    background-color: #26C1FC;
+    box-shadow: 1vw 1vw #3DAAD4;
+}
+.titlememory-v {
+    align-items: center;
+}
+.titlememory-h {
+    justify-content: center;
+}
+.lettermemory {
+    font-family: "Baloo 2";
+    color: white;
+    width: 12%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 7vw;
+    margin-bottom: 8vw;
+    margin-right: 1vw;
+    background-color: #FFB525;
+    box-shadow: 0.7vw 0.7vw #DDA028;
+    transition: 0.5s;
+}
+.lettermemory:hover {
+    transform: scale(1.05);
+    box-shadow: 0.5vw 0.5vw #DDA028;
+    transition: 0.5s;
+}
+.subtitlememory {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+}
+.subtitlememory h2 {
+    font-family: "Baloo 2";
+    font-weight: bold;
+    color: white;
+    font-size: 4vw;
+    margin-top: 0;
+    margin-bottom: 1vw;
+}
+.subtitlememory h3 {
+    font-family: "Baloo 2";
+    color: white;
+    font-size: 3vw;
+    margin-top: 0;
+    margin-bottom: 0.5vw;
+}
+.turismomemory-title {
+	font-family: "Baloo 2";
+	color: black;	
+    text-align: center;
+    height: 1px;
+    visibility: hidden;
+}
+
+.titlemomery, .descripmomery {
+	text-align: center;
+}
+.titlemomery h1, .descripmomery p {
+	font-family: Raleway;
+	color: black;
+}
+.titlemomery h1 {
+	font-weight: bold;
+}
+.grid-turismo-memory {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+	height: auto;
+	margin: auto;
+}
+.grid-turismo-memory img {
+	width: 23%;
+}
+.img-turismo-memory {
+	margin: 5px;
+	cursor: pointer;
+	box-sizing: content-box;
+}
+.img-turismo-memory:hover {
+	outline: 2px dashed black;
+}
+.img-white {
+	margin: 5px;
+	outline: 3px solid green;
+}
+.img-white:hover {
+	cursor: auto;
+	outline: 3px solid green;
+}
+.pointereven-none {
+	pointer-events: none;
+}
+.parejas-encontradas, #response-turismo-memory {
+	font-family: "Baloo 2";
+	font-weight: normal;
+	font-size: 22px;
+}
+.parejas-encontradas {
+    color: black;
+	margin-top: 10px !important;
+}
+#memory-win {
+	display: none;
+	text-align: center;
+	margin-top: 25px;
+}
+#memory-win h2 {
+	color: #FFB525;
+	font-family: "Baloo 2";
+	font-weight: bold;
+	font-size: 30px;
+}
+#memory-win h4 {
+	color: black;
+	font-family: "Baloo 2";
+	font-weight: bold;
+	font-size: 24px;
+}
+#memory-win p {
+	color: black;
+	font-weight: Raleway;
+	font-weight: normal;
+	font-size: 17px;
+	margin-top: 20px;
+}
+.btn-reset {
+	font-family: "Baloo 2";
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    background-color: #6CD805;
+    border: none;
+    margin-top: 20px;
+}
+.btn-reset:hover, .btn-reset:focus, .btn-reset:active {
+	color: white !important;
+    background-color: #82AD49 !important;
+    border: none !important;
+    outline: none !important;
+}
+
+.memory-info {
+    text-align: center;
+}
+.memory-info h1 {
+    font-family: "Baloo 2";
+    font-weight: bold;
+    color: black;
+    font-size: 42px;
+}
+.memory-info p {
+    font-family: "Baloo 2";
+    color: black;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
