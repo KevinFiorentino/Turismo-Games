@@ -1,0 +1,111 @@
+.titlediferencias {
+    width: 100%;
+    height: 27vw;
+    display: flex;
+    background-color: #26C1FC;
+    box-shadow: 1vw 1vw #3DAAD4;
+}
+.titlediferencias-v {
+    align-items: center;
+}
+.titlediferencias-h {
+    justify-content: center;
+}
+.letterdiferencias {
+    font-family: "Baloo 2";
+    color: white;
+    width: 7.5%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 7vw;
+    margin-bottom: 8vw;
+    margin-right: 1vw;
+    background-color: #FF8AD1;
+    box-shadow: 0.7vw 0.7vw #CF80A7;
+    transition: 0.5s;
+}
+.letterdiferencias:hover {
+    transform: scale(1.05);
+    box-shadow: 0.5vw 0.5vw #CF80A7;
+    transition: 0.5s;
+}
+.subtitlediferencias {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+}
+.subtitlediferencias h2 {
+    font-family: "Baloo 2";
+    font-weight: bold;
+    color: white;
+    font-size: 4vw;
+    margin-top: 0;
+    margin-bottom: 1vw;
+}
+.subtitlediferencias h3 {
+    font-family: "Baloo 2";
+    color: white;
+    font-size: 3vw;
+    margin-top: 0;
+    margin-bottom: 0.5vw;
+}
+.turismodiferencias-title {
+	font-family: "Baloo 2";
+	color: black;	
+    text-align: center;
+    height: 1px;
+    visibility: hidden;
+}
+
+#fin-pared, #puerta-abajo, #paloma, #palito-cupula, #pared-izq, #reloj, #pico-arriba,
+#fin-pared2, #puerta-abajo2, #paloma2, #palito-cupula2, #pared-izq2, #reloj2, #pico-arriba2 {
+    
+}
+
+#cabildo-info {
+    margin-left: 15px;
+}
+#cabildo-info h2 {
+    font-family: "Baloo 2";
+    font-weight: bold;
+    color: black;
+}
+#cabildo-aciertos {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+#cabildo-aciertos p {
+    font-family: "Baloo 2";
+    font-size: 20px;
+    color: black;
+}
+#win-cabildo {
+    display: none;
+    text-align: center;
+}
+#win-cabildo h2 {
+    font-family: "Baloo 2";
+    font-weight: bold;
+    color: #FF8AD1;
+}
+#win-cabildo h4 {
+    font-family: "Baloo 2";
+    font-weight: normal;
+    color: black;
+}
+
+.btn-reset {
+    font-family: "Baloo 2";
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    background-color: #6CD805;
+    border: none;
+    margin-top: 20px;
+}
+.btn-reset:hover, .btn-reset:focus, .btn-reset:active {
+	color: white !important;
+    background-color: #82AD49 !important;
+    border: none !important;
+    outline: none !important;
+}
