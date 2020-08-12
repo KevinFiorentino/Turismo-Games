@@ -40,7 +40,7 @@
     color: white;
     font-size: 4vw;
     margin-top: 0;
-    margin-bottom: 1vw;
+    margin-bottom: 0.5vw;
 }
 .subtitlediferencias h3 {
     font-family: "Baloo 2";
@@ -57,38 +57,45 @@
     visibility: hidden;
 }
 
-#fin-pared, #puerta-abajo, #paloma, #palito-cupula, #pared-izq, #reloj, #pico-arriba,
-#fin-pared2, #puerta-abajo2, #paloma2, #palito-cupula2, #pared-izq2, #reloj2, #pico-arriba2 {
-    
-}
-
-#cabildo-info {
+#cabildo-info, #colon-info {
+    width: 50%;
     margin-left: 15px;
 }
-#cabildo-info h2 {
+@media (max-width: 991px) {
+    #cabildo-info, #colon-info {
+        width: 90%;
+    }
+}
+#cabildo-info h2, #colon-info h2 {
     font-family: "Baloo 2";
     font-weight: bold;
     color: black;
+    font-size: 36px;
 }
-#cabildo-aciertos {
+#cabildo-info p, #colon-info p{
+    font-family: "Baloo 2";
+    color: black;
+    font-size: 17px;
+}
+#cabildo-aciertos, #colon-aciertos {
     margin-top: 15px;
     margin-left: 15px;
 }
-#cabildo-aciertos p {
+#cabildo-aciertos p, #colon-aciertos p {
     font-family: "Baloo 2";
     font-size: 20px;
     color: black;
 }
-#win-cabildo {
+#win-cabildo, #win-colon {
     display: none;
     text-align: center;
 }
-#win-cabildo h2 {
+#win-cabildo h2, #win-colon h2 {
     font-family: "Baloo 2";
     font-weight: bold;
     color: #FF8AD1;
 }
-#win-cabildo h4 {
+#win-cabildo h4, #win-colon h4 {
     font-family: "Baloo 2";
     font-weight: normal;
     color: black;
