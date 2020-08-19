@@ -15,20 +15,20 @@
 .letterquizz {
 	font-family: "Baloo 2";
 	color: white;
-	width: 7.5%;
+	width: 9%;
     height: 9VW;
     text-align: center;
     font-weight: bold;
     font-size: 7vw;
     margin-bottom: 7vw;
     margin-right: 1.2vw;
-    background-color: #BF8FFD;
-    box-shadow: 0.9vw 0.9vw #9480AE;
+    background-color: #FFB525;
+    box-shadow: 0.9vw 0.9vw #DDA028;
     transition: 0.5s;
 }
 .letterquizz:hover {
 	transform: scale(1.05);
-	box-shadow: 0.7vw 0.7vw #9480AE;
+	box-shadow: 0.7vw 0.7vw #DDA028;
 	transition: 0.5s;
 }
 .subtitlequizz {
@@ -82,6 +82,7 @@ strong {
 .listAnswers li {
 	font-size: 18px;
 	margin: 1vw;
+	margin-bottom: 10px;
 }
 .listAnswers a {
 	font-family: "Baloo 2";
@@ -91,7 +92,6 @@ strong {
 }
 .listAnswers a:hover, .listAnswers a:focus {
 	cursor: pointer;
-	font-weight: bold;
 	text-decoration: none !important;
 }
 .buttonsquiz {
@@ -112,7 +112,7 @@ strong {
 	color: white;
     font-weight: bold;
     font-size: 3rem;
-	background-color: #BF8FFD;
+	background-color: #FFB525;
 	border: none;
 	border-radius: 10px;
 }
@@ -123,7 +123,7 @@ strong {
 #buttonNext_img:hover, #buttonNext_img:focus, #buttonNext_img:active, 
 .btn-quizreset_img:hover, .btn-quizreset_img:focus, .btn-quizreset_img:active {
 	color: white !important;
-    background-color: #9480AE !important;
+    background-color: #DDA028 !important;
     border: none !important;
     outline: none !important;
 }
@@ -139,10 +139,10 @@ strong {
 }
 #turismo-quiz, #turismo-quiz_img {
 	display: none;
-    border: 3px solid #BF8FFD;
+    border: 3px solid #FFB525;
     border-radius: 10px;
     background-color: #FCFCFC;
-	box-shadow: 1vw 1vw #9480AE;
+	box-shadow: 1vw 1vw #DDA028;
 	margin-top: 5vw;
 }
 
@@ -152,7 +152,7 @@ strong {
 	margin-bottom: 5px !important;
 }
 .progress-bar-success {
-	background-color: #BF8FFD;
+	background-color: #FFB525;
 }
 .quizprogress {
 	font-family: "Baloo 2";
@@ -190,15 +190,15 @@ strong {
 .listAnswers_img img{
 	cursor: pointer;
 	border-radius: 10px;
-	border: 5px solid #BF8FFD;
+	border: 5px solid #FFB525;
 }
 .question-img {
 	border-radius: 10px;
-	border: 5px solid #BF8FFD;
+	border: 5px solid #FFB525;
 }
 @media (max-width: 512px) {
 	.listAnswers_img img {
-		border: 3px solid #BF8FFD;
+		border: 3px solid #FFB525;
 	}
 }
 .question img {
@@ -211,9 +211,9 @@ strong {
 a.url-back{
 	font-family: "Baloo 2";
 	font-weight:bold;
-	padding:1vw 2vw;
+	padding: 1vw 2vw;
 	background-color:#6CD805;
-	font-size:3rem;
+	font-size: 24px;
 	color:#ffffff!important;
 	border-radius:10px;
 	text-decoration:none!important;
