@@ -22,13 +22,13 @@
     font-size: 7vw;
     margin-bottom: 7vw;
     margin-right: 1.2vw;
-    background-color: #FFB525;
-    box-shadow: 0.9vw 0.9vw #DDA028;
+    background-color: #BF8FFD;
+    box-shadow: 0.9vw 0.9vw #9480AE;
     transition: 0.5s;
 }
 .letterquizz:hover {
 	transform: scale(1.05);
-	box-shadow: 0.7vw 0.7vw #DDA028;
+	box-shadow: 0.7vw 0.7vw #9480AE;
 	transition: 0.5s;
 }
 .subtitlequizz {
@@ -112,7 +112,7 @@ strong {
 	color: white;
     font-weight: bold;
     font-size: 3rem;
-	background-color: #FFB525;
+	background-color: #BF8FFD;
 	border: none;
 	border-radius: 10px;
 }
@@ -123,7 +123,7 @@ strong {
 #buttonNext_img:hover, #buttonNext_img:focus, #buttonNext_img:active, 
 .btn-quizreset_img:hover, .btn-quizreset_img:focus, .btn-quizreset_img:active {
 	color: white !important;
-    background-color: #DDA028 !important;
+    background-color: #9480AE !important;
     border: none !important;
     outline: none !important;
 }
@@ -139,10 +139,10 @@ strong {
 }
 #turismo-quiz, #turismo-quiz_img {
 	display: none;
-    border: 3px solid #FFB525;
+    border: 3px solid #BF8FFD;
     border-radius: 10px;
     background-color: #FCFCFC;
-	box-shadow: 1vw 1vw #DDA028;
+	box-shadow: 1vw 1vw #9480AE;
 	margin-top: 5vw;
 }
 
@@ -152,7 +152,7 @@ strong {
 	margin-bottom: 5px !important;
 }
 .progress-bar-success {
-	background-color: #FFB525;
+	background-color: #BF8FFD;
 }
 .quizprogress {
 	font-family: "Baloo 2";
@@ -190,15 +190,15 @@ strong {
 .listAnswers_img img{
 	cursor: pointer;
 	border-radius: 10px;
-	border: 5px solid #FFB525;
+	border: 5px solid #BF8FFD;
 }
 .question-img {
 	border-radius: 10px;
-	border: 5px solid #FFB525;
+	border: 5px solid #BF8FFD;
 }
 @media (max-width: 512px) {
 	.listAnswers_img img {
-		border: 3px solid #FFB525;
+		border: 3px solid #BF8FFD;
 	}
 }
 .question img {
