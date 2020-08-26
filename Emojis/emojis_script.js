@@ -7,10 +7,11 @@ const myQuestions = [
 			b: "Agronomía",
             c: "Villa del Parque",
             d: "Flores",
-            e: "Parque Chacabuco",
+			e: "Parque Chacabuco",
+			f: "Villa Luro",
 		},
 		correctAnswer: "Flores",
-		description: "En la Basílica San José de Flores, ícono del barrio, el Papa Francisco dio sus primeros pasos en la vida parroquial. <a href='https://mail.google.com/mail/u/1/#inbox/FMfcgxwJXfglnClNhTVtGqmKMnghVCJM' target='blank_'>Conocé más sobre la Basílica</a>"
+		description: "En la Basílica San José de Flores, ícono del barrio, el Papa Francisco dio sus primeros pasos en la vida parroquial. <a href='https://turismo.buenosaires.gob.ar/es/otros-establecimientos/bas%C3%ADlica-de-san-jos%C3%A9-de-flores' target='blank_'>Conocé más sobre la Basílica</a>"
     },
     {
         id: "2",
@@ -20,7 +21,8 @@ const myQuestions = [
 			b: "Recoleta",
             c: "Colegiales",
             d: "Boedo",
-            e: "Saavedra",
+			e: "Saavedra",
+			f: "Monserrat",
 		},
 		correctAnswer: "Colegiales",
 		description: "En este barrio funciona el Mercado de Pulgas, gran galpón donde se pueden encontrar todo tipo de curiosidades y donde se destacan las antigüedades en mobiliario y objetos de todas las épocas. <a href='https://turismo.buenosaires.gob.ar/es/otros-establecimientos/mercado-de-pulgas-0' target='blank_'>Conocé más sobre el Mercado</a>"
@@ -33,7 +35,8 @@ const myQuestions = [
 			b: "Parque Avellaneda",
             c: "Belgrano",
             d: "Constitución",
-            e: "Vélez Sarsfield",
+			e: "Vélez Sarsfield",
+			f: "Nueva Pompeya",
 		},
 		correctAnswer: "Constitución",
 		description: "La construcción de la Estación de ferrocarril transformó por completo el aspecto de la zona, ya que era muy lujosa. Fue reconstruida a lo largo de ¡más de 100 años!"
@@ -46,7 +49,8 @@ const myQuestions = [
 			b: "Barracas",
             c: "San Nicolás",
             d: "Villa Soldati",
-            e: "Mataderos",
+			e: "Mataderos",
+			f: "Retiro",
 		},
 		correctAnswer: "Mataderos",
 		description: "Allí funciona la Feria de Mataderos, en la cual se puede ver el costado más autóctono de Buenos Aires. Cuenta con más de 700 puestos de artesanías y comidas tradicionales para comer escuchando folklore de fondo. <a href='https://turismo.buenosaires.gob.ar/es/otros-establecimientos/feria-de-mataderos' target='blank_'>Conocé más sobre la Feria</a>"
@@ -59,7 +63,8 @@ const myQuestions = [
 			b: "Agronomía",
             c: "Villa del Parque",
             d: "Palermo",
-            e: "Villa Luro",
+			e: "Villa Luro",
+			f: "Almagro",
 		},
 		correctAnswer: "Agronomía",
 		description: "Lleva el nombre actual desde 1904, cuando se instaló el entonces Instituto Superior de Agronomía y Veterinaria (hoy, Facultad de Agronomía y Veterinaria de la UBA). ¿Sabías que allí vivió entre1934 y 1951 el escritor Julio Cortázar?"
@@ -72,7 +77,8 @@ const myQuestions = [
 			b: "Parque Patricios",
             c: "Villa Riachuelo",
             d: "Nueva Pompeya",
-            e: "Villa Real",
+			e: "Villa Real",
+			f: "Villa Crespo",
 		},
 		correctAnswer: "Villa Real",
 		description: "En este barrio se encuentra la Fundación Museo del Automóvil, donde se pueden ver autos antiguos como el Hudson que perteneció a Jorge Luis Borges, el Dodge que llevó a Maradona el día de su casamiento y pertenencias de ídolos del automovilismo como Juan Manuel Fangio y Oscar Gálvez. <a href='https://turismo.buenosaires.gob.ar/es/otros-establecimientos/museo-del-autom%C3%B3vil' target='blank_'>Conocé más sobre el Museo</a>"
@@ -85,7 +91,8 @@ const myQuestions = [
 			b: "Núñez",
             c: "Retiro",
             d: "Villa Pueyrredón",
-            e: "San Cristóbal",
+			e: "San Cristóbal",
+			f: "Liniers",
 		},
 		correctAnswer: "Retiro",
 		description: "Centro financiero y residencial a la vez, fue la puerta de entrada de millones de inmigrantes entre los siglos XIX y XX. Recorriendo el barrio es posible ver numerosos edificios y monumentos históricos, además de muchas iglesias tradicionales de la ciudad. <a href='https://turismo.buenosaires.gob.ar/es/recorrido/retiro-0' target='blank_'>Conocé todo lo que tiene para ofrecerte Retiro</a>"
@@ -98,7 +105,8 @@ const myQuestions = [
 			b: "Puerto Madero",
             c: "La Boca",
             d: "Chacarita",
-            e: "San Cristóbal",
+			e: "San Cristóbal",
+			f: "San Nicolás",
 		},
 		correctAnswer: "San Cristóbal",
 		description: "Es un barrio multicultural. Allí se encuentran, por ejemplo, la Mezquita Al Ahmad, el Centro Okinawense y el famoso Bar de Cao, entre otros bares notables de la Ciudad."
@@ -111,7 +119,8 @@ const myQuestions = [
 			b: "Villa Riachuelo",
             c: "Monte Castro",
             d: "Boedo",
-            e: "Villa Devoto",
+			e: "Villa Devoto",
+			f: "Saavedra",
 		},
 		correctAnswer: "Villa Devoto",
 		description: "Es este barrio se encuentra el Café de García. Su clásica picada y la cantidad de fotos y objetos que adornan sus paredes lo convierten en uno de los bares tradicionales de Buenos Aires. <a href='https://turismo.buenosaires.gob.ar/es/gastronomico/caf%C3%A9-de-garc%C3%ADa' target='blank_'>Descubrí todos los adornos que pintan este Bar</a>"
@@ -124,7 +133,8 @@ const myQuestions = [
 			b: "Parque Avellaneda",
             c: "Belgrano",
             d: "Parque Patricios",
-            e: "Villa Pueyrredón",
+			e: "Villa Pueyrredón",
+			f: "Parque Chas",
 		},
 		correctAnswer: "Belgrano",
 		description: "Es un barrio lleno de viejas e importantes casonas señoriales, aunque los últimos años, se construyeron modernos edificios que contrastan con su estilo clásico de antaño. ¿Sabías que este barrio pertenecía a la Provincia de Buenos Aires hasta 1887? <a href='https://turismo.buenosaires.gob.ar/es/recorrido/belgrano-0' target='blank_'>Conocé todo lo que tiene para ofrecerte Belgrano</a>"
@@ -158,7 +168,8 @@ function turismoemojis() {
                         <li><strong>c. </strong><a onClick="validateAnswer(this, '${myQuestions[indexPreg].answers.c}')">${myQuestions[indexPreg].answers.c}</a></li>
                         <li><strong>d. </strong><a onClick="validateAnswer(this, '${myQuestions[indexPreg].answers.d}')">${myQuestions[indexPreg].answers.d}</a></li>
                         <li><strong>e. </strong><a onClick="validateAnswer(this, '${myQuestions[indexPreg].answers.e}')">${myQuestions[indexPreg].answers.e}</a></li>
-                    </ul>
+						<li><strong>f. </strong><a onClick="validateAnswer(this, '${myQuestions[indexPreg].answers.f}')">${myQuestions[indexPreg].answers.f}</a></li>
+					</ul>
                 </div>
 
 				<div class="progress">

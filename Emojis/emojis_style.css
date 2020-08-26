@@ -132,18 +132,14 @@
     margin-right: auto;
 }
 .listAnswers {
-	display: flex;
-    justify-content: center;
-	flex-wrap: wrap;
 	margin-top: 20px;
 	list-style: none;
 	margin: 0;
 	padding: 0;
-
+	column-count: 2;
 }
 .listAnswers li {
-	width: 33%;
-	text-align: center;
+
 }
 .listAnswers li a {
 	cursor: pointer;
@@ -170,13 +166,13 @@
 }
 .containeremojis {
 	margin: 3vw;
-	background-color: #FCFCFC;
+	background-color: white;
 }
 #turismo-emojis, #turismo-emojis_img {
 	display: none;
     border: 3px solid #BF8FFD;
     border-radius: 10px;
-    background-color: #FCFCFC;
+    background-color: white;
 	box-shadow: 1vw 1vw #9480AE;
 	margin-top: 5vw;
 }
